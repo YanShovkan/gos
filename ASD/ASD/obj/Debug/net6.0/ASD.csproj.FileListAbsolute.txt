@@ -1,0 +1,15 @@
+C:\Users\Yan\source\repos\gos\ASD\ASD\bin\Debug\net6.0\ASD.exe
+C:\Users\Yan\source\repos\gos\ASD\ASD\bin\Debug\net6.0\ASD.deps.json
+C:\Users\Yan\source\repos\gos\ASD\ASD\bin\Debug\net6.0\ASD.runtimeconfig.json
+C:\Users\Yan\source\repos\gos\ASD\ASD\bin\Debug\net6.0\ASD.dll
+C:\Users\Yan\source\repos\gos\ASD\ASD\bin\Debug\net6.0\ASD.pdb
+C:\Users\Yan\source\repos\gos\ASD\ASD\obj\Debug\net6.0\ASD.csproj.AssemblyReference.cache
+C:\Users\Yan\source\repos\gos\ASD\ASD\obj\Debug\net6.0\ASD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yan\source\repos\gos\ASD\ASD\obj\Debug\net6.0\ASD.AssemblyInfoInputs.cache
+C:\Users\Yan\source\repos\gos\ASD\ASD\obj\Debug\net6.0\ASD.AssemblyInfo.cs
+C:\Users\Yan\source\repos\gos\ASD\ASD\obj\Debug\net6.0\ASD.csproj.CoreCompileInputs.cache
+C:\Users\Yan\source\repos\gos\ASD\ASD\obj\Debug\net6.0\ASD.dll
+C:\Users\Yan\source\repos\gos\ASD\ASD\obj\Debug\net6.0\refint\ASD.dll
+C:\Users\Yan\source\repos\gos\ASD\ASD\obj\Debug\net6.0\ASD.pdb
+C:\Users\Yan\source\repos\gos\ASD\ASD\obj\Debug\net6.0\ASD.genruntimeconfig.cache
+C:\Users\Yan\source\repos\gos\ASD\ASD\obj\Debug\net6.0\ref\ASD.dll
