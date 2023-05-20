@@ -8,7 +8,7 @@
 
 //sorts.PrintArray(array);
 
-var hashTable = new HashTableChainMethod(10);
+var hashTable = new HashTableDoubleHash(10);
 for(int i = 1; i < 20; i++)
 {
     hashTable.Insert(new PersonModel { Age = i, Name = "Ян" });
