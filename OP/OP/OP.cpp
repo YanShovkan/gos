@@ -103,7 +103,8 @@ int main()
     abstract_object test1 = abstract_object(10, "test1", false);
     abstract_object test2 = abstract_object(15, "test2", true);
     abstract_object test3 = abstract_object(12, "test3", false);
-    abstract_object test4 = abstract_object(19, "test3", false);
+    abstract_object test4 = abstract_object(19, "test4", false);
+    abstract_object test5 = abstract_object(0, "test5", true);
     myList.add(&test1);
     myList.print_list();
     myList.add(&test2);
@@ -111,6 +112,22 @@ int main()
     myList.add(&test3);
     myList.print_list();
     myList.add(&test4);
+    myList.print_list();
+    myList.add(&test4);
+    myList.print_list();
+    myList.add(&test5);
+    myList.print_list();
+    myList.add(&test1);
+    myList.print_list();
+    myList.add(&test2);
+    myList.print_list();
+    myList.add(&test3);
+    myList.print_list();
+    myList.add(&test4);
+    myList.print_list();
+    myList.add(&test4);
+    myList.print_list();
+    myList.add(&test5);
     myList.print_list();
 }
 
