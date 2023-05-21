@@ -172,13 +172,13 @@ public class BinaryTree
                 parent = current;
                 current = current.Left;
             }
-            if (current.Data < value)
+            else if (current.Data < value)
             {
                 //Если искомое значение больше, идем направо.
                 parent = current;
                 current = current.Right;
             }
-            if(current.Data == value)
+            else if(current.Data == value)
             {
                 //Если равны, то останавливаемся
                 break;
