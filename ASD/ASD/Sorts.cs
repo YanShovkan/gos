@@ -146,7 +146,7 @@ public class Sorts
             //распределение по спискам
             for (int j = 0; j < array.Length; j++)
             {
-                int temp = (array[j] % (int)Math.Pow(range - zeroIndex, i + 1)) / (int)Math.Pow(range - zeroIndex, i);
+                int temp = (array[j] % (int)Math.Pow(10, i + 1)) / (int)Math.Pow(10, i);
                 lists[temp + zeroIndex].Add(array[j]);
             }
 
@@ -185,22 +185,11 @@ public class Sorts
     public void CountingSort(int[] array)
     {
         //поиск минимального и максимального значений
-        var min = array[0];
-        var max = array[0];
-        foreach (int element in array)
-        {
-            if (element > max)
-            {
-                max = element;
-            }
-            else if (element < min)
-            {
-                min = element;
-            }
-        }
+        var min = array.Min();
+        var max = array.Max();
 
         //поправка
-        var correctionFactor = min != 0 ? -min : 0;
+        var correctionFactor = min != 0 ? -min;
         max += correctionFactor;
 
         var count = new int[max + 1];
