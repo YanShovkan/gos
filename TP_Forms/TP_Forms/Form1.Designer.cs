@@ -33,6 +33,7 @@ partial class Form1
             this.buttonClear = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
             this.buttonLoad = new System.Windows.Forms.Button();
+            this.buttonSelect = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // richTextBox
@@ -77,17 +78,28 @@ partial class Form1
             // 
             this.buttonLoad.Location = new System.Drawing.Point(8, 455);
             this.buttonLoad.Name = "buttonLoad";
-            this.buttonLoad.Size = new System.Drawing.Size(780, 23);
+            this.buttonLoad.Size = new System.Drawing.Size(780, 24);
             this.buttonLoad.TabIndex = 1;
             this.buttonLoad.Text = "Получить из файла";
             this.buttonLoad.UseVisualStyleBackColor = true;
             this.buttonLoad.Click += new System.EventHandler(this.buttonLoad_Click);
             // 
+            // buttonSelect
+            // 
+            this.buttonSelect.Location = new System.Drawing.Point(8, 485);
+            this.buttonSelect.Name = "buttonSelect";
+            this.buttonSelect.Size = new System.Drawing.Size(780, 24);
+            this.buttonSelect.TabIndex = 1;
+            this.buttonSelect.Text = "Выборка из списка";
+            this.buttonSelect.UseVisualStyleBackColor = true;
+            this.buttonSelect.Click += new System.EventHandler(this.buttonSelect_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 487);
+            this.ClientSize = new System.Drawing.Size(800, 519);
+            this.Controls.Add(this.buttonSelect);
             this.Controls.Add(this.buttonLoad);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.buttonClear);
@@ -106,4 +118,5 @@ partial class Form1
     private Button buttonClear;
     private Button buttonSave;
     private Button buttonLoad;
+    private Button buttonSelect;
 }
