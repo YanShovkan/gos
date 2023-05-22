@@ -25,17 +25,31 @@
 //    Console.WriteLine($"Поиск элемента {model.Name} - {model.Age} : {hashTable.Find(model)}");
 //}
 
-var list = new SingleLinkedList();
-var random = new Random();
-for(int i = 0; i < 10; i++)
+//var list = new SingleLinkedList();
+//var random = new Random();
+//for(int i = 0; i < 10; i++)
+//{
+//    list.Add(random.Next(0,2));
+//}
+
+//list.Print();
+//list.Add(101);
+//list.Print();
+//list.Remove(1000);
+//list.Print();
+//list.Remove(1);
+//list.Print();
+
+var graph = new Graph();
+
+for(int i = 0; i < 6; i++)
 {
-    list.Add(random.Next(0,2));
+    graph.AddVertex();
 }
 
-list.Print();
-list.Add(101);
-list.Print();
-list.Remove(1000);
-list.Print();
-list.Remove(1);
-list.Print();
+for (int i = 0; i < 5; i++)
+{
+    graph.AddEdge(i, i+1);
+}
+
+graph.BFS(0);
