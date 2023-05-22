@@ -25,15 +25,17 @@
 //    Console.WriteLine($"Поиск элемента {model.Name} - {model.Age} : {hashTable.Find(model)}");
 //}
 
-var tree = new BinaryTree();
+var list = new SingleLinkedList();
 var random = new Random();
-
-for(int i = 0; i < 20; i++)
+for(int i = 0; i < 10; i++)
 {
-    tree.Add(random.Next(0,100));
+    list.Add(random.Next(0,2));
 }
 
-tree.Add(20);
-tree.Remove(20);
-tree.Remove(20);
-
+list.Print();
+list.Add(101);
+list.Print();
+list.Remove(1000);
+list.Print();
+list.Remove(1);
+list.Print();

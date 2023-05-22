@@ -189,19 +189,19 @@ public class Sorts
         var max = array.Max();
 
         //поправка
-        var correctionFactor = min != 0 ? -min;
+        var correctionFactor = -min;
         max += correctionFactor;
 
-        var count = new int[max + 1];
-        for (var i = 0; i < array.Length; i++)
+        int[] count = new int[max + 1];
+        for (int i = 0; i < array.Length; i++)
         {
             count[array[i] + correctionFactor]++;
         }
 
-        var index = 0;
-        for (var i = 0; i < count.Length; i++)
+        int index = 0;
+        for (int i = 0; i < count.Length; i++)
         {
-            for (var j = 0; j < count[i]; j++)
+            for (int j = 0; j < count[i]; j++)
             {
                 array[index] = i - correctionFactor;
                 index++;
