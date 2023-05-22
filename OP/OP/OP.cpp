@@ -1,26 +1,26 @@
 ﻿#include <iostream>
 
-struct podrazdelenie {
+struct plane {
     int number;
-    const char* name;
-    const char* specialization;
-    int count;
-    const char* FIO;
-    podrazdelenie(int _number, const char* _name, const char* _specialization, int _count, const char* _FIO) {
+    const char* type;
+    const char* model;
+    int gruz;
+    int dalnost;
+    plane(int _number, const char* _type, const char* _model, int _gruz, int _dalnost) {
         number = _number;
-        name = _name;
-        specialization = _specialization;
-        count = _count;
-        FIO = _FIO;
+        type = _type;
+        model = _model;
+        gruz = _gruz;
+        dalnost = _dalnost;
     }
 };
 
 struct node {
-    podrazdelenie* object;
+    plane* object;
     node* next;
     node* prev;
 
-    node(podrazdelenie* value){
+    node(plane* value){
         object = value;
         next = nullptr;
         prev = nullptr;
@@ -36,7 +36,7 @@ struct list {
         tail = nullptr;
     }
 
-    void add(podrazdelenie* value) {
+    void add(plane* value) {
         node* new_node = new node(value);
         if (is_empty()) {
             tail = new_node;
@@ -89,7 +89,7 @@ struct list {
         printf("List:\n");
         while (currentNode != nullptr)
         {
-            printf("Element %d - number: %d, name: %s, specialization: %s, count: %d, FIO:%s \n",i, currentNode->object->number, currentNode->object->name, currentNode->object->specialization, currentNode->object->count, currentNode->object->FIO);
+            printf("Element %d - number: %d, type: %s, model: %s, gruz: %d, dalnost:%d \n",i, currentNode->object->number, currentNode->object->type, currentNode->object->model, currentNode->object->gruz, currentNode->object->dalnost);
             i++;
             currentNode = currentNode->next;
         }
@@ -104,20 +104,10 @@ int main()
 {
     list myList = list();
     myList.print_list();
-    podrazdelenie test1 = podrazdelenie(1, "test1", "test1", 10, "test1");
-    podrazdelenie test2 = podrazdelenie(10, "test2", "test2", 10, "test2");
-    podrazdelenie test3 = podrazdelenie(13, "test3", "test3", 10, "test3");
-    podrazdelenie test4 = podrazdelenie(7, "test4", "test4", 10, "test4");
-    myList.add(&test1);
-    myList.print_list();
-    myList.add(&test2);
-    myList.print_list();
-    myList.add(&test3);
-    myList.print_list();
-    myList.add(&test4);
-    myList.print_list();
-    myList.add(&test4);
-    myList.print_list();
+    plane test1 = plane(5, "pass", "11", 10, 100);
+    plane test2 = plane(4, "gruz", "22", 10, 200);
+    plane test3 = plane(23, "test", "33", 10, 300);
+    plane test4 = plane(71, "test", "44", 10, 400);
     myList.add(&test1);
     myList.print_list();
     myList.add(&test2);
